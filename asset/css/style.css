@@ -1,0 +1,446 @@
+/* Reset Css */
+*{
+    padding: 0;
+    margin :0;
+    box-sizing: border-box;
+}
+
+/* Variables for CSS
+ */
+ :root{
+    /* Variable for content */
+    --content-margin: 186px;
+    --column-width: 280px;
+    
+    --row-height: 120px;
+    ---row-gap: 52px;
+    --column-gap: 114px;
+    
+ }
+
+
+/* CSS for main */
+
+#main{
+
+background-color: #01013f;
+z-index: 1;
+}
+
+/* CSS for header */
+
+#header{
+    height: 80px;
+    background-color: #01013f;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #000;
+}
+
+#logo{
+    height: 81px;
+    position: absolute;
+    left: 48px;
+    top: 0;
+    left: 48px;
+}
+
+#headerright{
+   position: absolute;
+   top: 31px;
+   right: 36px;
+}
+
+#headerright a#supportlink{
+    text-decoration: none;
+}
+#headerright i#support{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+
+}
+#headerright i#support:hover{
+    color: #3bc9ff;
+    
+}
+
+/* CSS for slider */
+
+#slider{
+    
+    height: 300px;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+    
+}
+
+.slides{
+    width: 300%;
+    height: 100%;
+    display: flex;
+   z-index:11;
+}
+
+.slides input{
+    display:none;
+}
+
+.slides .slide{
+    width: 100vw;
+    transition: 2.0s;
+}
+
+.slideimg{
+    width: 100vw;
+    height: 300px;
+}
+
+/* CSS for manual slide navigation (buttons) */
+
+div.navigation-manual{
+position: absolute;
+width: 100%;
+display:flex;
+justify-content: center;
+
+margin-top: -20px;
+
+
+}
+
+label.manual-btn{
+    border: 2px solid #01013f;
+    padding: 3px;
+    border-radius: 10px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color:#fff;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: 
+    #3bc9ff;
+    border-color: #3bc9ff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100vw;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200vw;
+}
+
+/* CSS for content */
+#content{
+    
+    
+    margin-left:var(--content-margin);
+    margin-right: var(--content-margin);
+    margin-top:37px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(var(--column-width)*3+ var(--column-gap)*2);
+    
+}
+
+/* CSS for container */
+.Card_Container{
+    display: flex;
+    flex-direction: column;
+    
+}
+ .phong_ban{
+    width: var(--column-width);
+    height: var(--row-height);
+    background: #FEFBE7;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    cursor:pointer;
+    margin-bottom: 52px;
+}
+
+
+/* CSS for image logo */
+.image{
+    position: absolute;
+    left: 34px;
+}
+
+.image .imglogo{
+    width: 60.76px;
+    height: 60px; 
+    cursor: pointer;
+    
+}
+
+/* CSS for title of one card */
+.cardTitle{
+    position: absolute;
+    top: 46px;
+    width: 100px;
+    right: 64px;
+    left: 116px;
+    cursor: pointer;
+}
+
+.cardTitle>h2{
+    font-family:'Inter', sans-serif;
+    font-size: 20px;
+    
+    line-height: 24.2px
+}
+
+/* CSS only for Kinh_Doanh Card */
+.Kinh_Doanh>h2{
+
+width: 125px;
+}
+
+/* CSS for Drop down list all */
+.dropdownLinkList{
+    position: absolute;
+    top: 140px;
+    height: 117px; 
+    
+    border:1px solid #000;
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    width: 1068px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    visibility: hidden; 
+    transition: 0.1s;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.LiContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    width: 337px;
+}
+
+.logoLink{
+    width: 81.88px;
+   margin-right: 23.12px;
+}
+
+/* CSS for Nhan Su */
+.NhanSu_Subnav{
+    left: 0px;
+    
+}
+.Phan_mem_nhan_su{
+    width: 81.88px;
+    
+}
+
+.Hop_dong_dien_tu{
+    width: 43.36px;
+    margin-right: 20px;
+    
+}
+
+.borderLine{
+    width: 60px;
+    height: 0px;
+    border: 1px solid #888888;
+    transform: rotate(-90deg);
+    position: absolute;
+    background-color: #888;
+    
+}
+
+.LinkContent{
+width: 232px;
+height: 25px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+}
+
+/* CSS for KeToan */
+.KeToan_Subnav{
+    left: calc(-(var(--column-width)+var(column-gap)));
+}
+.MISA{
+    width: 50px;
+    height: 50px;
+}
+.HoaDon{
+    width: 50px;
+    height: 50px;
+}
+
+/* CSS for Kinh Doanh */
+.KinhDoanh_Subnav{
+    left: -788px;
+}
+
+/* CSS for hover phong_ban*/
+
+/* CSS for phong_ban Nhan Su hover */
+#Nhan_Su_Card:hover ul.NhanSu_Subnav{
+visibility: visible;
+display: flex;
+
+}
+
+#Container_Nhan_su:hover{
+    width: 100%;
+    height: 292px;
+
+}
+
+/* CSS for phong_ban Ke Toan hover */
+#Ke_toan_Card:hover ul.KeToan_Subnav{
+    visibility: visible;
+    display: flex;  
+    left: 0;
+
+} 
+ #Container_Ke_Toan:hover{
+    width: 100%;
+    height: 292px;
+    position: relative;
+
+} 
+
+/* CSS for phong_ban Kinh Doanh hover */
+.Kinh_Doanh_Card:hover .KinhDoanh_Subnav{
+    visibility: visible;
+    display: flex;  
+    left: 0;
+
+} 
+
+ #Container_Kinh_Doanh:hover{
+    width: 100%;
+    height: 292px;
+
+} 
+
+
+
+
+/* CSS for footer section */
+#footer{
+margin-top: -15px;
+background-color:  #005C8A;
+height: 106px;
+width: 100%;
+color: #fff;
+display: flex;
+align-items: center;
+
+}
+
+/* Address section */
+#address-info{
+    margin-top: 25px;
+    margin-bottom: 24px;
+    margin-left: 181px;
+    display:grid;
+    grid-template-columns:  471.73px;
+    grid-template-rows: 19px;
+    row-gap: 19px;
+}   
+
+.AddressContent{
+    
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0;
+    
+    
+
+}
+
+/* Contact section */
+#contact-info{
+    margin-top: 25px;
+    margin-bottom: 24px;
+    margin-left: 51.27px;
+    display:grid;
+    grid-template-columns:  195px;
+    grid-template-rows: 19px;
+    row-gap: 19px;
+}
+
+.ContactContent{
+    display: flex;
+    cursor:pointer;
+}
+
+.LogoContact{
+    width: 24px;
+    height: 24px;
+    margin-right: 22px;
+}
+
+.MailLogo{
+    width: 26.3px;
+    height: 19px;
+}
+.ContactInfo{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+/* Network section */
+#network-info{
+width: 200px;
+height: 100%;
+margin-left: 141.6px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.NetworkInfo{
+width: 40px;
+height: 40px;
+
+}
+
+

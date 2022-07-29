@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSEC Portal</title>
+    <link rel="stylesheet" href=".\asset\css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    
+<!-- Start main  section-->
+<div id="main">
+
+<!--start  header section-->
+<div id="header">
+
+    <!--  Header Left section-->
+<a href="https://vsec.com.vn/" id="headerleft">
+    <img src="./asset/img/VSEClogo1.png" alt=" logo" id="logo" title = "LOGO VSEC">
+</a>
+
+    <!--  Header Right section-->
+<div id="headerright">
+    <a href="http://ticket.vsec.vn:8080/" id="supportlink"><i id="support" title = "Hỗ trợ kĩ thuật">Hỗ trợ kĩ thuật</i></a>
+</div>
+</div>
+ <!-- End Header section -->
+
+<!--  Slider section-->
+<div id="slider">
+<div class="slides">
+    <!-- radio button start -->
+    <input type="radio" name = "radio-btn" id="radio1">
+    <input type="radio" name = "radio-btn" id="radio2">
+    <input type="radio" name = "radio-btn" id="radio3">
+    <!-- radio button end -->
+
+    <!-- slides images start -->
+ <div class="slide first">
+    <img src="./asset/img/Slider1.png" alt="" class = "slideimg">
+</div>
+
+<div class="slide">
+    <img src="./asset/img/Slider2.png" alt="" class = "slideimg">
+</div>
+
+<div class="slide">
+    <img src="./asset/img/Slider3.png" alt="" class = "slideimg">  
+</div>  
+    <!-- slides images end -->
+</div>
+<!-- slides end  -->
+
+    <!-- automatic navigation start -->
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+    }, 10000);
+</script>
+    <!-- automatic navigation end -->
+
+    <!-- manual navigation start -->
+<div class="navigation-manual">
+<label for="radio1" class="manual-btn"></label>
+<label for="radio2" class="manual-btn"></label>
+<label for="radio3" class="manual-btn"></label>
+</div>
+    <!-- manual navigation end -->
+
+</div>
+<!-- End Slider Section -->
+
+<!-- Start Web Content section-->
+<div id="content">
+
+<!-- Card_Container Nhan Su -->
+    <div class="Card_Container" id="Container_Nhan_su">
+        <!-- Nhan Su Card -->
+        <div class="phong_ban " id="Nhan_Su_Card">
+            <!-- img -->
+        <div class="image">
+             <img src="./asset/img/Nhan_Su.png" alt="logoNhan_Su" class="imglogo"> 
+        </div>
+            <!-- title -->
+        <div class="cardTitle">
+            <h2>Nhân sự</h2>
+        </div>
+        
+        <!-- Drop down link list -->
+        <ul class="dropdownLinkList NhanSu_Subnav">
+            <a href="https://hr.g-group.com.vn/">
+                <li class = "LiContent">
+            
+                <img src="./asset/img/Phan_mem_nhan_su.png" alt="" class="logoLink Phan_mem_nhan_su">
+                <h2 class="LinkContent" >Phần mềm nhân sự</h2>
+               
+            </li>
+            </a>
+           
+            <div class="borderLine"></div>
+
+            <a href="https://econtractapp.efy.com.vn/login">
+            <li class = "LiContent">
+            
+                <img src="./asset/img/Hop_dong_dien_tu.png" alt="" class="logoLink Hop_dong_dien_tu">
+                <h2 class="LinkContent">Hợp đồng điện tử</h2>
+               
+            </li>
+             </a>
+        </ul>
+        </div> 
+    </div>
+<!-- End Card Container Nhan Su -->
+
+<!-- Start Card Container Ke Toan -->
+    <div class="Card_Container" id="Container_Ke_Toan">
+    <div class="phong_ban "id='Ke_toan_Card'>
+        <div class="image">
+             <img src="./asset/img/Ke_toan.png" alt="logoKe_toan" class="imglogo"> 
+        </div>
+        <div class="cardTitle">
+            <h2>Kế toán</h2>
+        </div>
+        <ul class="dropdownLinkList KeToan_Subnav">
+            <a href="https://amisapp.misa.vn/home">
+                <li class = "LiContent">
+            
+                <img src="./asset/img/MISA_AMIS.png" alt="" class="logoLink MISA">
+                <h2 class="LinkContent" >MISA AMIS</h2>
+               
+            </li>
+            </a>
+           
+            <div class="borderLine"></div>
+
+            <a href="https://sso.easyinvoice.vn/account/login?ReturnUrl=%2Fconnect%2Fauthorize%3Fclient_id%3DEasyInvoice%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520email%26state%3DOpenIdConnect.AuthenticationProperties%253DKb9AUWn9HJh7XPHu6YBHUF9EgkCBl1G75oFGGwE0bBCS59KE_a6W8alNuQxq-WuOXJfzBZNf6MT6ec9nGVZFYS-DTwIHYviJTGg1Rmbez9NfDrixSrFyiw0F0_uFiqeYMC1hxcT4KO5tRHvzqserzjGUmffxfdZRpign5IiIP-U%26response_mode%3Dform_post%26nonce%3D637910387976215557.OWI3MjMwYzYtMTMyMi00YjBkLTlkNGUtZGVlMTUzMDg5ZWI1YWFkNzE0N2UtZGJkMC00NDY2LTliMGQtODcxMjM5MzI2YTdl%26redirect_uri%3Dhttps%253A%252F%252F0101724513.easyinvoice.com.vn%252F%26post_logout_redirect_uri%3Dhttps%253A%252F%252F0101724513.easyinvoice.com.vn%252F%26x-client-SKU%3DID_NET45%26x-client-ver%3D5.3.0.0">
+            <li class = "LiContent">
+            
+                <img src="./asset/img/HoaDon.png" alt="" class="logoLink HoaDon">
+                <h2 class="LinkContent">Hóa Đơn</h2>
+               
+            </li>
+             </a>
+        </ul>  
+    </div>    
+    </div>
+<!-- End Card Container Ke Toan -->
+
+<!-- Start Card container KinhDoanh -->
+    <div class="Card_Container" id="Container_Kinh_Doanh">
+    <div class="phong_ban Kinh_Doanh_Card">
+        <div class="image">
+            <img src="./asset/img/Kinh_Doanh.png" alt="logoKinhDoanh" class="imglogo"> 
+        </div>
+        <div class="cardTitle Kinh_Doanh">
+                <h2>Kinh Doanh</h2>
+        </div>
+        <ul class="dropdownLinkList KinhDoanh_Subnav">
+            <a href="https://amisapp.misa.vn/crm/dashboard/main">
+                <li class = "LiContent">
+                <img src="./asset/img/MISA_AMIS.png" alt="" class="logoLink MISA">
+                <h2 class="LinkContent" >CRM </h2>
+               
+            </li>
+            </a>
+        </ul>  
+    </div>    
+    </div>
+    
+
+    <div class="phong_ban">
+        <div class="image">
+                 <img src="./asset/img/MKT.png" alt="logoMKT" class="imglogo"> 
+        </div>
+        <div class="cardTitle">
+                <h2>Marketing</h2>
+        </div>
+    </div>
+    
+    <div class="phong_ban">
+        <div class="image">
+            <img src="./asset/img/PM.png" alt="logoPM" class="imglogo"> 
+       </div>
+        <div class="cardTitle">
+                <h2>PM</h2>
+        </div>
+    </div>
+    
+    <div class="phong_ban">
+        <div class="image">
+            <img src="./asset/img/PS.png" alt="logoPS" class="imglogo"> 
+        </div>
+        <div class="cardTitle">
+            <h2>PS</h2>
+        </div>
+    </div>
+    
+    <div class="phong_ban">
+        <div class="image">
+            <img src="./asset/img/SOC.png" alt="logoSOC" class="imglogo"> 
+       </div>
+        <div class="cardTitle">
+            <h2>SOC</h2>
+        </div>
+    </div>
+    
+    <div class="phong_ban">
+        <div class="image">
+             <img src="./asset/img/TECH.png" alt="logoTECH" class="imglogo"> 
+        </div>
+        <div class="cardTitle">
+           <h2>TECH</h2>
+        </div>
+    </div>
+    
+    <div class="phong_ban">
+        <div class="image">
+             <img src="./asset/img/VSEC.png" alt="logoVSEC" class="imglogo"> 
+       </div>
+      <div class="cardTitle">
+            <h2>VSEC</h2>
+        </div>
+    </div>
+    
+</div> 
+<!-- End Web Content Section  -->
+
+</div>
+<!-- End main section -->
+
+<!-- Start footer section -->
+<div id="footer">
+    <div id="address-info">
+        <h2 class="AddressContent">Trụ sở: 275 Nguyễn Trãi, Quận Thanh Xuân, Hà Nội</h2>
+        <h2 class="AddressContent">Chi nhánh: 412 Nguyễn Thị Minh Khai, Quận 3, TP.HCM
+        </h2>
+    </div>
+
+    <div id="contact-info">
+        <div class="ContactContent">
+           
+            <a href="tel:1800 2056">
+                <img src="./asset/img/PhoneIcon.png" alt="PhoneIcon" class="LogoContact">
+                <h2 class="ContactInfo">1800 2056</h2>
+            </a>
+        </div>
+        <div class="ContactContent" onclick="sendEmail();">
+            <img src="./asset/img/MailLogo.png" alt="" class="LogoContact MailLogo">
+                <h2 class="ContactInfo">contact@vsec.com.vn</h2>
+        </div>
+        <script>
+            function sendEmail() {
+            window.location = "mailto:contact@vsec.com.vn";
+        }
+        </script>
+    </div>
+
+    <div id="network-info">
+        <a href="https://www.facebook.com/vsec.com.vn">
+        <img src="./asset/img/FacebookIcon.png" alt="FacebookIcon" class="NetworkInfo">
+        </a>
+        
+        <a href="https://www.linkedin.com/company/vsec-jsc/posts/?feedView=all">
+        <img src="./asset/img/LinkedinIcon.png" alt="LinkedinIcon" class="NetworkInfo">
+        </a>
+        
+        <a href="https://www.youtube.com/c/VsecvnSecurity">
+        <img src="./asset/img/YoutubeIcon.png" alt="" class="NetworkInfo">
+        </a>
+    </div>
+    
+</div> 
+<!-- End Footer Section -->
+
+
+</body>
+</html>
